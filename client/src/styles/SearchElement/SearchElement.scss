@@ -1,0 +1,140 @@
+li.movie-li {
+    display: inline;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    visibility: visible;
+    pointer-events: auto;
+
+    a.movie-a {
+        border-top: none;
+        color: inherit;
+        display: flex;
+        cursor: pointer;
+        text-decoration: none;
+        width: 100%;
+        padding: 0.5rem;
+        transition: all 0.125s ease 0s;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.03125em;
+        text-transform: inherit;
+        -webkit-font-smoothing: auto;
+        border: 0px;
+        font: inherit;
+        vertical-align: baseline;
+        list-style: none;
+        visibility: visible;
+        pointer-events: auto;
+
+        div.div-image-movie {
+            min-width: 3rem;
+            width: 3rem;
+            font-size: 2rem;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-transform: inherit;
+            -webkit-font-smoothing: auto;
+
+            div.sub-div {
+                cursor: pointer;
+                letter-spacing: 0.03125em;
+                text-transform: inherit;
+                -webkit-font-smoothing: auto;
+                display: inline-flex;
+                overflow: hidden;
+                position: relative;
+
+                img.img-movie {
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    font-size: 1rem;
+                    padding: 0px;
+                    border: 0px;
+                    box-sizing: border-box;
+                    font: inherit;
+                    vertical-align: baseline;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        div.div-text-movie {
+            display: flex;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 0px 0px 0px 1rem;
+            padding: 0px;
+            border: 0px;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-transform: inherit;
+            -webkit-font-smoothing: auto;
+            letter-spacing: 0.03125em;
+            list-style: none;
+            visibility: visible;
+            pointer-events: auto;
+
+            div.title-movie {
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+                letter-spacing: 0.03125em;
+                text-decoration: inherit;
+                text-transform: inherit;
+                -webkit-font-smoothing: auto;
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+                font: inherit;
+                cursor: pointer;
+            }
+
+            div.year-movie {
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+                font-weight: 400;
+                letter-spacing: 0.01786em;
+                text-decoration: inherit;
+                text-transform: inherit;
+                -webkit-font-smoothing: auto;
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+                font: inherit;
+                visibility: visible;
+                pointer-events: auto;
+            }
+        }
+    }
+}
+

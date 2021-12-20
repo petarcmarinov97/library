@@ -1,0 +1,181 @@
+$blackColor: rgb(24, 24, 24);
+
+header {
+
+    a.title {
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032541;
+    ;
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+    transition: top 0.2s linear;
+
+    a.logo {
+        display: block;
+        margin-right: 0px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 0;
+        aspect-ratio: auto 154 / 20;
+        height: 70px;
+    }
+
+    div.content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.sub_media {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    div.nav_wrapperLeft {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow: visible;
+        color: white;
+    }
+
+    div.input-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+
+        div.div-search-menu {
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            position: absolute;
+            top: calc(90% + 0.1rem);
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            font: inherit;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+
+            div {
+                margin: 0px;
+                padding: 0px;
+                font: inherit;
+                display: block;
+                border: 2px solid grey;
+                border-radius: 13px;
+
+                ul.ul-menu {
+                    max-height: 600px;
+                    width: 650px;
+                    overflow: auto;
+                    scrollbar-width: 300px;
+                    font: inherit;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-left: 0rem;
+                }
+
+                ul.ul-menu :hover {
+                    background-color: rgb(163, 163, 163);
+                }
+            }
+        }
+    }
+
+    ul.ul-results {
+        visibility: visible;
+        pointer-events: auto;
+        display: flex;
+        list-style: none;
+        border: 0px;
+        font: inherit;
+        box-sizing: border-box;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    div.nav_wrapperRight {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    div.nav_wrapperRight ul {
+        justify-content: flex-end;
+    }
+
+    ul.guests,
+    ul.users {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        list-style-type: none;
+        padding-inline-start: 10px;
+
+        li{
+            padding-top:5px
+        }
+
+        li a {
+            border: transparent 1px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #032541;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            display: inline;
+            color: white;
+            text-align: center;
+            padding: 28px 10px;
+            font-size: 17px;
+            text-decoration: none;
+            float: right;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    }
+
+
+}
