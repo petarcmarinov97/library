@@ -1,0 +1,366 @@
+div.header {
+    --maxPrimaryPageWidth: 1400px;
+    --primaryColor: #0e0b0c;
+    color: #000;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, rgba(5.49%, 4.31%, 4.71%, 1.00), rgba(5.49%, 4.31%, 4.71%, 0.84));
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid var(--primaryColor);
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+
+    div.sub {
+        color: #000;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        font-size: 1em;
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-image: linear-gradient(to right, rgba(5.49%, 4.31%, 4.71%, 1.00) 150px, rgba(5.49%, 4.31%, 4.71%, 0.84) 100%);
+        height: 600px;
+
+        div.single_column {
+            color: #000;
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+            font-size: 1em;
+            -webkit-font-smoothing: antialiased;
+            max-width: var(--maxPrimaryPageWidth);
+            width: 100%;
+            z-index: 0;
+            box-sizing: border-box;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            section.original_header {
+                font-family: 'Source Sans Pro', Arial, sans-serif;
+                font-size: 1em;
+                -webkit-font-smoothing: antialiased;
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: nowrap;
+                color: #fff;
+
+                div.poster_wrapper {
+                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                    font-size: 1em;
+                    -webkit-font-smoothing: antialiased;
+                    box-sizing: border-box;
+                    display: block;
+                    min-width: 300px;
+                    width: 300px;
+                    height: 450px;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    color: #fff;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+
+                    div.image_content {
+                        font-family: 'Source Sans Pro', Arial, sans-serif;
+                        font-size: 1em;
+                        -webkit-font-smoothing: antialiased;
+                        box-sizing: border-box;
+                        width: 100%;
+                        min-width: 100%;
+                        height: 100%;
+                        color: #fff;
+
+                        img.poster {
+                            font-family: 'Source Sans Pro', Arial, sans-serif;
+                            font-size: 1em;
+                            -webkit-font-smoothing: antialiased;
+                            border: 0;
+                            box-sizing: border-box;
+                            color: #fff;
+                            display: block;
+                            width: 100%;
+                            min-width: 100%;
+                            height: 100%;
+                            min-height: 100%;
+                            border-width: 0px;
+                            outline: none;
+                        }
+                    }
+                }
+
+                div.header_poster_wrapper {
+                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                    font-size: 1em;
+                    -webkit-font-smoothing: antialiased;
+                    box-sizing: border-box;
+                    display: flex;
+                    color: #fff;
+
+                    section.header_poster {
+                        font-family: 'Source Sans Pro', Arial, sans-serif;
+                        font-size: 1em;
+                        -webkit-font-smoothing: antialiased;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: flex-start;
+                        align-content: center;
+                        box-sizing: border-box;
+                        padding-left: 40px;
+                        color: #fff;
+
+                        div.title {
+                            font-family: 'Source Sans Pro', Arial, sans-serif;
+                            font-size: 1em;
+                            -webkit-font-smoothing: antialiased;
+                            unicode-bidi: isolate;
+                            box-sizing: border-box;
+                            width: 100%;
+                            margin-bottom: 24px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            color: #fff;
+
+                            h2.title {
+                                font-family: 'Source Sans Pro', Arial, sans-serif;
+                                -webkit-font-smoothing: antialiased;
+                                box-sizing: border-box;
+                                font-weight: 600;
+                                width: 100%;
+                                margin: 0;
+                                padding: 0;
+                                font-size: 2.2rem;
+                                color: #fff;
+
+                                a.title {
+                                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                                    -webkit-font-smoothing: antialiased;
+                                    font-size: 2.2rem;
+                                    background: transparent;
+                                    box-sizing: border-box;
+                                    text-decoration: none;
+                                    font-weight: 700;
+                                    color: #fff;
+                                }
+
+                                a.title:hover {
+                                    color: rgb(166, 202, 186);
+                                }
+
+                                span.release_date {
+
+                                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                                    -webkit-font-smoothing: antialiased;
+                                    font-size: 2.2rem;
+                                    box-sizing: border-box;
+                                    color: #fff;
+                                    opacity: 0.8;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            div.facts {
+                                font-family: 'Source Sans Pro', Arial, sans-serif;
+                                font-size: 1em;
+                                -webkit-font-smoothing: antialiased;
+                                box-sizing: border-box;
+                                color: #fff;
+                                display: flex;
+
+                                span.release {
+                                    margin-right: 4px;
+                                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                                    font-size: 1em;
+                                    -webkit-font-smoothing: antialiased;
+                                    box-sizing: border-box;
+                                    color: #fff;
+                                    position: relative;
+                                    top: 0;
+                                    left: 0;
+                                    padding-left: 0;
+                                }
+
+                                span.runtime {
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+
+                        ul.actions {
+                            font-family: 'Source Sans Pro', Arial, sans-serif;
+                            font-size: 1em;
+                            -webkit-font-smoothing: antialiased;
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                            list-style-type: none;
+                            margin-bottom: 20px;
+                            width: 100%;
+                            height: 68px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            color: #fff;
+
+                            li.chart {
+                                font-family: 'Source Sans Pro', Arial, sans-serif;
+                                font-size: 1em;
+                                -webkit-font-smoothing: antialiased;
+                                list-style-type: none;
+                                color: #fff;
+                                margin-right: 20px;
+                                background: transparent;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                box-sizing: border-box;
+                                height: 68px;
+
+                                div.outer-ring {
+                                    color: #000;
+                                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                                    font-size: 1.3em;
+                                    -webkit-font-smoothing: antialiased;
+                                    white-space: normal;
+                                    box-sizing: border-box;
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    background-color: #ffffff;
+                                    width: 50px;
+                                    height: 50px;
+                                    padding: 2px;
+                                    margin-right: 3px;
+                                    border: solid 2px black;
+
+                                    div.user-score-chart {
+                                        color: #000;
+                                        font-family: 'Source Sans Pro', Arial, sans-serif;
+                                        font-size: 1em;
+                                        -webkit-font-smoothing: antialiased;
+                                        white-space: normal;
+                                        box-sizing: border-box;
+                                        position: relative;
+                                        display: inline-block;
+                                        width: 100%;
+                                        height: 100%;
+                                        text-align: center;
+
+                                        div.percent {
+                                            color: #000;
+                                            font-family: 'Source Sans Pro', Arial, sans-serif;
+                                            font-size: 1em;
+                                            -webkit-font-smoothing: antialiased;
+                                            white-space: normal;
+                                            text-align: center;
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            height: 100%;
+                                            z-index: 2;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            span.icon {
+                                                white-space: normal;
+                                                text-align: center;
+                                                box-sizing: border-box;
+                                                font-family: 'Consensus' !important;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-variant: normal;
+                                                text-transform: none;
+                                                line-height: 1;
+                                                -webkit-font-smoothing: antialiased;
+                                                color: rgb(0, 0, 0);
+                                                padding-top: 1px;
+                                                padding-left: 1px;
+                                                font-size: 0.8em;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                div.text {
+                                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                                    font-size: 1em;
+                                    -webkit-font-smoothing: antialiased;
+                                    list-style-type: none;
+                                    box-sizing: border-box;
+                                    color: #fff;
+                                    font-weight: 700;
+                                    margin-left: 6px;
+                                    white-space: pre-line;
+                                }
+                            }
+                        }
+
+                        div.header_info {
+                            font-family: 'Source Sans Pro', Arial, sans-serif;
+                            font-size: 1em;
+                            -webkit-font-smoothing: antialiased;
+                            box-sizing: border-box;
+                            width: 100%;
+                            color: #fff;
+
+                            h3.tagline {
+                                font-family: 'Source Sans Pro', Arial, sans-serif;
+                                -webkit-font-smoothing: antialiased;
+                                unicode-bidi: isolate;
+                                padding: 0;
+                                box-sizing: border-box;
+                                width: 100%;
+                                margin: 0 0 8px 0;
+                                margin-bottom: 0;
+                                font-size: 1.1em;
+                                font-weight: 400;
+                                font-style: italic;
+                                opacity: 0.7;
+                                color: #fff;
+                            }
+
+                            h3.overview {
+                                font-family: 'Source Sans Pro', Arial, sans-serif;
+                                -webkit-font-smoothing: antialiased;
+                                unicode-bidi: isolate;
+                                padding: 0;
+                                box-sizing: border-box;
+                                font-weight: 600;
+                                font-size: 1.3em;
+                                width: 100%;
+                                margin: 0 0 8px 0;
+                                color: #fff;
+                                margin-top: 10px;
+                            }
+
+                            div.overview {
+                                font-family: 'Source Sans Pro', Arial, sans-serif;
+                                font-size: 1em;
+                                -webkit-font-smoothing: antialiased;
+                                unicode-bidi: isolate;
+                                box-sizing: border-box;
+                                color: #fff;
+
+                                p.overview {
+                                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                                    -webkit-font-smoothing: antialiased;
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                    font-size: 1em;
+                                    color: #fff;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

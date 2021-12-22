@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../styles/NavBar/NavBar.css"
+import "../../styles/NavBar/NavBar.css"
 import { Link } from "react-router-dom";
-import SearchElement from "./SearchElement";
+import  SearchElement from "./SearchElement";
 
-const Navbar = () => {
+const Navbar = ({showMovies, setShow}) => {
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -14,7 +14,7 @@ const Navbar = () => {
     setQuery(e.target.value);
 
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=5bc116c28a52c964a737db00d574daa7&language=en-US&page=1&include_adult=false&query=${query}`
+      `https://api.themoviedb.org/3/search/multi?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&query=${query}&page=1&include_adult=false`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -31,22 +31,42 @@ const Navbar = () => {
           <div className="content">
             <div className="sub_media">
                 <div className="nav_wrapperLeft">
-                    <Link className="title" to="/">My Movie Collection</Link>
+                  <Link className="title" to="/">Movies Library</Link>
+                  <div className="dropdown">
+                    <button className="dropbtn">Movies</button>
+                    <div className="dropdown-content">
+                      <a href="/movie/popular">Popular</a>
+                      <a href="/movie/top-rated">Top Rated</a>
+                    </div>
+                  </div>
+                  <div className="dropdown">
+                    <button className="dropbtn">TV Shows</button>
+                    <div className="dropdown-content">
+                      <a href="/tv/popular">Popular</a>
+                      <a href="/tv/top-rated">Top Rated</a>
+                    </div>
+                  </div>
                 </div>
                 <div className="input-wrapper">
                   <input
+                    className="input-movies"
                     type="text"
                     placeholder="Search for a movie"
                     value={query}
                     onChange={onChange}
                   />
-                  {results.length > 0 && (
-                    <div className="div-search-menu">
+
+                  {results.length > 0 && query!=="" && showMovies===true && (
+                    <div
+                    className="div-search-menu"
+                    >
                       <div>
                         <ul className="ul-menu">
                           {results.map((movie) => (
-                            <SearchElement key={movie.id} movie = {movie} />
-                          ))}
+                            movie.poster_path && (movie.title || movie.name) && (movie.release_date || movie.first_air_date))&&
+                            (
+                                    <SearchElement key={movie.id} movie={movie} />
+                            ))}
                         </ul>
                       </div>
                     </div>
