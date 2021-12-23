@@ -1,8 +1,8 @@
-section.popular_movie_section {
+section.catalog_section {
     --accountLightBlue: 1, 180, 228;
     --imageBorderRadius: 8px;
     --maxPrimaryPageWidth: 1400px;
-    
+
     color: #000;
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 1em;
@@ -141,7 +141,8 @@ section.popular_movie_section {
                                     -webkit-font-smoothing: antialiased;
                                     box-sizing: border-box;
                                     margin-top: -30px;
-
+                                    width: 1100px;
+                                    
                                     div.page_wrapper {
                                         color: #000;
                                         font-family: 'Source Sans Pro', Arial, sans-serif;
@@ -202,11 +203,11 @@ section.popular_movie_section {
                                                 font-size: 1.5em;
                                                 font-weight: 700;
                                                 color: #fff;
-                                                
+
                                             }
 
-                                            a.text:hover{
-                                                color:black;
+                                            a.text:hover {
+                                                color: black;
                                             }
                                         }
                                     }

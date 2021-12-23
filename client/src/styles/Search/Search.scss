@@ -24,6 +24,8 @@ section.search {
     color: #fff;
     max-width: var(--maxPrimaryPageWidth);
     background-image: linear-gradient(to right, rgba(var(--tmdbDarkBlue), 0.8) 0%, rgba(var(--tmdbDarkBlue), 0) 100%), url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/kSNojkWwSZWsYv0Xj1gcq88okzY.jpg");
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 
     div.media {
         font-family: 'Source Sans Pro', Arial, sans-serif;

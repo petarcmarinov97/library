@@ -1,0 +1,57 @@
+li.card {
+    color: #000;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    list-style-type: none;
+    list-style-position: inside;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    width: 140px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 4px;
+    border: 1px solid rgba(30, 213, 169, 1);
+    padding-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img.actor_image {
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        font-size: 1em;
+        -webkit-font-smoothing: antialiased;
+        list-style-type: none;
+        list-style-position: inside;
+        font-weight: normal;
+        color: #000;
+        border: 0;
+        box-sizing: border-box;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        width: 138px;
+        height: 175px;
+        display: block;
+    }
+
+    p.actor_name {
+        color: #000;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        list-style-type: none;
+        list-style-position: inside;
+        box-sizing: border-box;
+        font-size: 1em;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-top: 10px;
+    }
+    p.character_name{
+        font-size: 0.8em;
+    }
+}

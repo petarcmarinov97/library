@@ -1,16 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import "../../styles/Catalog/Catalog.css";
-import MovieCard from "../MovieCard";
-
+import CatalogCard from './CatalogCard';
 
 const Catalog = ({type, criteria, pageTitle}) => {
 
-    const moviesPerPage = 20;
     const [totalPages, setTotalPages] = useState(1);
     const [page, setPage] = useState(1);
+    const [isLoading, setLoading] = useState(true)
 
     const [data, setData] = useState([]);
-    const [isLoading, setLoading] = useState(true)
 
     const increasePages = (e) =>{
         e.preventDefault();
@@ -19,7 +17,7 @@ const Catalog = ({type, criteria, pageTitle}) => {
 
     useEffect(() => {
         setLoading(true);
-        fetch(`https://api.themoviedb.org/3/${type}/${criteria}?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=${page}`)
+        fetch(`https://api.themoviedb.org/3/${type}/${criteria}?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=${page}&append_to_response=external_ids`)
             .then(res => res.json())
             .then(res =>{
                 if(!res.errors){
@@ -33,7 +31,9 @@ const Catalog = ({type, criteria, pageTitle}) => {
     }, [page]);
 
     return (
-        <section className="popular_movie_section">
+        data
+        ?(
+            <section className="catalog_section">
             <div className="media">
                 <div className="column_wrapper">
                     <div className="content_wrapper">
@@ -48,7 +48,7 @@ const Catalog = ({type, criteria, pageTitle}) => {
                                             <div className="page_wrapper">
                                             {data.length>0 && 
                                                 data.map(movie=> (
-                                                <MovieCard key={movie.id} type={type} movie={movie} />
+                                                <CatalogCard key={movie.id} type={type} data={movie} />
                                                 ))}
                                              )
                                             </div>
@@ -67,6 +67,8 @@ const Catalog = ({type, criteria, pageTitle}) => {
                 </div>
             </div>
         </section>
+        )
+        : ( <div>Loading...</div> )
     )
 }
 

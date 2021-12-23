@@ -5,12 +5,10 @@ import MovieCard from "../MovieCard";
 
 const Trending = () => {
 
-    const type="movie";
     const [data, setData] = useState([]);
     const [trend, setTrend] = useState("day");
 
     const onClick = (e) =>{
-        e.preventDefault();
         if(e.target.id == "left"){
             setTrend("day");
         }
@@ -60,7 +58,7 @@ const Trending = () => {
                             {data.length>0 && (
                             <div className="pageNumber">
                             {data.map(movie=> (
-                            <MovieCard key={movie.id} type={type} movie={movie} />
+                            <MovieCard key={movie.id} type={movie.media_type} data={movie} />
                             ))}
                             </div>
                             )}

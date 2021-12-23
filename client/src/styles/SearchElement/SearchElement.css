@@ -70,24 +70,6 @@ li.movie-li a.movie-a div.div-image-movie div.sub-div {
   position: relative;
 }
 
-li.movie-li a.movie-a div.div-image-movie div.sub-div img.img-movie {
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 1rem;
-  padding: 0px;
-  border: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font: inherit;
-  vertical-align: baseline;
-  cursor: pointer;
-}
-
 li.movie-li a.movie-a div.div-text-movie {
   display: -webkit-box;
   display: -ms-flexbox;

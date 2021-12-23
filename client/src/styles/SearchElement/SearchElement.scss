@@ -56,23 +56,6 @@ li.movie-li {
                 display: inline-flex;
                 overflow: hidden;
                 position: relative;
-
-                img.img-movie {
-                    width: 100%;
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    font-size: 1rem;
-                    padding: 0px;
-                    border: 0px;
-                    box-sizing: border-box;
-                    font: inherit;
-                    vertical-align: baseline;
-                    cursor: pointer;
-                }
             }
         }
 

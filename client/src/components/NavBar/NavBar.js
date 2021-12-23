@@ -62,10 +62,10 @@ const Navbar = ({showMovies, setShow}) => {
                     >
                       <div>
                         <ul className="ul-menu">
-                          {results.map((movie) => (
-                            movie.poster_path && (movie.title || movie.name) && (movie.release_date || movie.first_air_date))&&
+                          {results.map((data) => (
+                            data.poster_path && (data.title || data.name) && (data.release_date || data.first_air_date))&&
                             (
-                                    <SearchElement key={movie.id} movie={movie} />
+                                    <SearchElement key={data.id} data={data} type={data.media_type} />
                             ))}
                         </ul>
                       </div>

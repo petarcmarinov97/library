@@ -1,9 +1,9 @@
-import React from "react";
-import "../styles/MovieCardHomePage/MovieCard.css";
+import React from 'react'
+import "../../styles/CatalogCard/CatalogCard.css";
 
-const MovieCard = ({type, data}) => {
+const CatalogCard = ({type, data}) => {
     return (
-        <div key={data.id} id={data.id} className="card_style">
+        <div key={data.id} id={data.id} className="catalog_card_style">
             <div className="image">
                 <div className="wrapper">
                     <a className="image" href={`/${type}/details/${data.id}`}>
@@ -41,5 +41,5 @@ const MovieCard = ({type, data}) => {
         </div>
     );
 }
- 
-export default MovieCard;
+
+export default CatalogCard

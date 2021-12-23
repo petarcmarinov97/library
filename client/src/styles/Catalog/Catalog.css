@@ -1,4 +1,4 @@
-section.popular_movie_section {
+section.catalog_section {
   --accountLightBlue: 1, 180, 228;
   --imageBorderRadius: 8px;
   --maxPrimaryPageWidth: 1400px;
@@ -27,7 +27,7 @@ section.popular_movie_section {
   background-position: 50% 50%;
 }
 
-section.popular_movie_section div.media {
+section.catalog_section div.media {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -50,7 +50,7 @@ section.popular_movie_section div.media {
       align-content: flex-start;
 }
 
-section.popular_movie_section div.media div.column_wrapper {
+section.catalog_section div.media div.column_wrapper {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -71,7 +71,7 @@ section.popular_movie_section div.media div.column_wrapper {
           align-items: flex-start;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper {
+section.catalog_section div.media div.column_wrapper div.content_wrapper {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -96,7 +96,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper {
       flex-wrap: wrap;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.title {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.title {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -109,7 +109,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
           margin-inline-start: 70px;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.title h2 {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.title h2 {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -126,7 +126,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
   margin-bottom: 20px;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -144,7 +144,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
       align-content: flex-start;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -153,7 +153,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
           box-sizing: border-box;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -176,7 +176,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
   background: transparent;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -191,7 +191,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
   padding-bottom: 0;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -199,9 +199,10 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: -30px;
+  width: 1100px;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.page_wrapper {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.page_wrapper {
   color: #000;
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
@@ -219,7 +220,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
       flex-wrap: wrap;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
@@ -249,7 +250,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
   border-radius: var(--imageBorderRadius);
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination p.btn-load-more {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination p.btn-load-more {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #000;
@@ -271,7 +272,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
   margin-bottom: 0;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination p.btn-load-more a.text {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination p.btn-load-more a.text {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
@@ -287,7 +288,7 @@ section.popular_movie_section div.media div.column_wrapper div.content_wrapper d
   color: #fff;
 }
 
-section.popular_movie_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination p.btn-load-more a.text:hover {
+section.catalog_section div.media div.column_wrapper div.content_wrapper div.content div.sub div.white_column section.media_results div.media_items div.pagination p.btn-load-more a.text:hover {
   color: black;
 }
 /*# sourceMappingURL=Catalog.css.map */

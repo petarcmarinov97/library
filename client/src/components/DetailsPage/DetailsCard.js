@@ -3,10 +3,11 @@ import "../../styles/DetailsCard/DetailsCard.css";
 
 const DetailsCard = ({data, type, genres }) => {
     return (
-        <div 
+        <div
+        key={data.id} 
         className="header"
         style={{
-            backgroundImage: `url("https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${data.backdrop_path}")` 
+            backgroundImage: `url("https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/${data.backdrop_path}")` 
         }}>
             <div className="sub">
                 <div className="single_column">
@@ -14,8 +15,8 @@ const DetailsCard = ({data, type, genres }) => {
                         <div className="poster_wrapper">
                             <div className="image_content">
                                 <img 
-                                src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${data.poster_path}`}
                                 loading="lazy"
+                                src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${data.poster_path}`}
                                 className="poster" />
                             </div>
                         </div>

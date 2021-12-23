@@ -1,0 +1,109 @@
+div.cast {
+    color: #000;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #fff;
+    width: 100%;
+
+    div.column_wrapper {
+        color: #000;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        font-size: 1em;
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        div.sub_column {
+            color: #000;
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+            font-size: 1em;
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+
+            div.white_column {
+                color: #000;
+                font-family: 'Source Sans Pro', Arial, sans-serif;
+                font-size: 1em;
+                -webkit-font-smoothing: antialiased;
+                box-sizing: border-box;
+                background-color: #fff;
+                width: calc(100vw - 80px - 268px);
+                max-width: calc(var(--maxPrimaryPageWidth) - 80px - 268px);
+                display: flex;
+                flex-wrap: wrap;
+                flex: 0 1 auto;
+                padding-right: 30px;
+
+                section.panel {
+                    color: #000;
+                    font-family: 'Source Sans Pro', Arial, sans-serif;
+                    font-size: 1em;
+                    -webkit-font-smoothing: antialiased;
+                    box-sizing: border-box;
+                    width: 100%;
+                    display: block;
+                    padding: 30px 0;
+                    border-top: none;
+                    padding-top: 0;
+                    padding-bottom: 0;
+
+                    h3.cast_title {
+                        color: #000;
+                        font-family: 'Source Sans Pro', Arial, sans-serif;
+                        -webkit-font-smoothing: antialiased;
+                        unicode-bidi: isolate;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-weight: 600;
+                        font-size: 1.4em;
+                        margin-bottom: 20px;
+                    }
+
+                    div.scroller {
+                        color: #000;
+                        font-family: 'Source Sans Pro', Arial, sans-serif;
+                        font-size: 1em;
+                        -webkit-font-smoothing: antialiased;
+                        box-sizing: border-box;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+
+                        ol.cast_people {
+                            color: #000;
+                            font-family: 'Source Sans Pro', Arial, sans-serif;
+                            font-size: 1em;
+                            -webkit-font-smoothing: antialiased;
+                            box-sizing: border-box;
+                            list-style-type: none;
+                            list-style-position: inside;
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            overflow-y: hidden;
+                            margin-left: -10px;
+                            margin-top: -10px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
